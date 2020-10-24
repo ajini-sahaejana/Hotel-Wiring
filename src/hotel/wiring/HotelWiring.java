@@ -39,10 +39,10 @@ public class HotelWiring {
                 k = d;
             }
         
-        System.out.println("tc: "+tc+"\n"+"m: "+m+"\n"+"n: "+n+"\n"+"k: "+k);
+        System.out.println("tc: "+tc+"  "+"m: "+m+"  "+"n: "+n+"  "+"k: "+k);
         
         for (int i = 0; i < tc; i++) {
-            for (int j = k; j < m; j++) {
+            for (int j = k; j <= m; j++) {
                 f = in.nextInt();
                 if (j == 1) {
                     if (f == 0) {
@@ -53,9 +53,8 @@ public class HotelWiring {
                     }
                 }
             }
-            
         }
-        System.out.println("max rooms on " + maxrooms);
+        System.out.println("max rooms on: " + maxrooms);
     }
     
 }
