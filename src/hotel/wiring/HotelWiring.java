@@ -41,38 +41,23 @@ public class HotelWiring {
             if (d >= 1 && d <= m){
                     k = d;
             }
-            System.out.println("m: "+m+"  "+"n: "+n+"  "+"k: "+k);
-        
+            
             for (int j = k; j <= m; j++) {
                 int f = in.nextInt();
                 int g = in.nextInt();
                 
-                if (j==1) {
-                    if (f==m || f==0) {
-                        maxrooms = n;
-                    }
-                    if (g==m || g==0) {
-                        maxrooms += n;
-                    }
-                System.out.println("maxrooms: "+maxrooms);
-                break;
+                if (f==m || f==0) {
+                    maxrooms = n;
                 }
-                
-                if (j==2) {
-                    if (f==m || f==0) {
-                        maxrooms = n;
-                    }
-                    if (g==m || g==0) {
-                        maxrooms += n;
-                    }
-                    else
-                        maxrooms++;
+                if (g==m || g==0) {
+                    maxrooms += n;
+                }
+                else
+                    maxrooms++;
                     
-                System.out.println("maxrooms: "+maxrooms);
+                System.out.println(maxrooms);
                 break;
-                }
             }
         }
     }
-    
 }
